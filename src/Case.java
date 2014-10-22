@@ -14,7 +14,7 @@ public class Case extends Cellule{
 	}
 
 	void deplaceSur(Robot robot) {
-		robot.setCoordonnees(new Coordonnees(getLargeur(),getHauteur()));
+		robot.setCoordonnees(new Coordonnees(super.getLargeur(),super.getHauteur()));
 			
 		
 	}
