@@ -50,7 +50,21 @@ public abstract class Cellule {
 	public Robot getContenu(){
 		return r;
 	}
-	
+	/**
+	 * 
+	 * @return la largeur de la cellule
+	 */
+	public int getLargeur() {
+		return largeur;
+	}
+	/**
+	 * 
+	 * @return la hauteur de la cellule
+	 */
+	public int getHauteur() {
+		return hauteur;
+	}
+
 	public String toString(){
 		if(estBase() == 1) {
 			return " B ";
