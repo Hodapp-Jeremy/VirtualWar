@@ -9,7 +9,7 @@ public class Plateau {
 	public Plateau(){
 		this.hauteur=10;
 		this.largeur=5;
-		plateau=new Cellule[10][5];
+		plateau=new Cellule[hauteur][largeur];
 	}
 	
 	/**
