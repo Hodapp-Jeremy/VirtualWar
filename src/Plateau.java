@@ -4,7 +4,7 @@ public class Plateau {
 	int hauteur,largeur;
 	Cellule[][] plateau;
 	/**
-	 * On cree un tableau de cellule a 2dimensions pour representer le plateau
+	 * cree un tableau de cellule a 2dimensions pour representer le plateau
 	 */
 	public Plateau(){
 		this.hauteur=10;
@@ -12,6 +12,9 @@ public class Plateau {
 		plateau=new Cellule[10][5];
 	}
 	
+	/**
+	 * Affiche le plateau avec son contenu
+	 */
 	public void afficherPlateau() {	
 		for(int i = 0;i < hauteur;i++) {
 			for(int j=0;j < largeur;j++) {
@@ -28,11 +31,21 @@ public class Plateau {
 			System.out.println("");
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @return la hauteur du plateau
+	 *  
+	 */
 	public int getHauteur() {
 		return hauteur;
 	}
 
+	/**
+	 * 
+	 * @return la largeur du plateau
+	 * 
+	 */
 	public int getLargeur() {
 		return largeur;
 	}
